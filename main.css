@@ -1,3 +1,5759 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	width: 98.5vw;
+	height: 97.5vh;
+	margin: 10px;
+	font-size: 1vw;
+	overflow: hidden;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/*Only used for line-througn text decoration to show that
+the subject is not yet finished*/
+p1 {
+	text-decoration: line-through;
+}
+
+p2 {
+	text-decoration: underline;
+}
+
+h {
+	font-size: 50pt;
+	text-align: center;
+	display: flex;
+}
+
+.blackbox {
+	background: black;
+	display: inline-block;
+}
+
+.blackbox:hover {
+	background: transparent;
+}
+
+img {
+	width: 100%;
+}
+
+video {
+	width: 100%;
+}
+
+.draggable {
+	position: relative;
+	cursor: move;
+}
+
+.ma-page {
+	width: 98.5%;
+	height: 97.5%;
+	/*background: black;*/
+	overflow: hidden;
+	position: absolute;
+}
+
+.ma-topbox {
+	width: 100%;
+	height: 3%;
+	/*background: pink;*/
+	font-family: Courier;
+	border-bottom: dashed 0.5pt;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.ma-me {
+	width: 26%;
+	margin: 5px;
+	margin-left: 10px;
+	background: white;
+	float: left;
+}
+
+.ma-title {
+	width: 26%;
+	margin: 5px;
+	background: white;
+	float: left;
+}
+
+.ma-year {
+	width: 25%;
+	margin: 5px;
+	background: white;
+	text-align: right;
+	float: left;
+}
+
+.ma-search {
+	width: 10%;
+	margin: 5px;
+	background: white;
+	text-align: right;
+	float: left;
+}
+
+.ma-button {
+	width: 2%;
+	margin: 5px;
+	background: white;
+	text-align: right;
+	float: left;
+}
+
+.left-arrow {
+	font-size: 15pt;
+}
+
+.right-arrow {
+	font-size: 15pt;
+}
+
+.ma-bottombox {
+	width: 100%;
+	height: 95%;
+	margin-top: 12.5px;
+	/*background: purple;*/
+	font-family: Courier;
+}
+
+.ma-container {
+	width: 19.2%;
+	height: 96%;
+	margin-top: 20px;
+	margin-left: 6px;
+	margin-right: 5px;
+	/*background: salmon;*/
+	float: left;
+	position: relative;
+}
+
+.ma-textbox-main {
+	width: 94%;
+	height: 3%;
+	margin-left: 5px;
+	margin-right: 5px;
+	/*background: #4F9DED;*/
+	display: inline-block;
+}
+
+.ma-textbox {
+	width: 89.5%;
+	height: 90%;
+	padding: 7px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1vw;
+	word-spacing: -2px;
+	/*background: #4F9DED;*/
+	overflow: scroll;
+	display: inline-block;
+}
+
+.ma-textbox2 {
+	width: 43%;
+	padding: 7px;
+	margin-left: 6px;
+	margin-right: 5px;
+	font-size: 1vw;
+	word-spacing: -2px;
+	/*background: #4F9DED;*/
+	overflow: scroll;
+	display: inline-block;
+}
+
+.ma-subject {
+	display: inline-block;
+	position: absolute;
+}
+
+.ma-subject:hover {
+	text-decoration: underline; 
+}
+
+.ma-date {
+	text-align: right;
+	float: right;
+}
+
+#ma-aaliyah {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.aaliyah-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.aaliyah-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.aaliyah-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-adeaze {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.adeaze-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.adeaze-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.adeaze-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-al-green {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.al-green-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.al-green-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.al-green-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-alicia-keys {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.alicia-keys-bottombox {
+	width: 37%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+.alicia-keys-bottombox-left {
+	width: 30%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.alicia-keys-albumbox {
+	width: 20%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+.alicia-keys-imagebox {
+	width: 45.5%;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+.alicia-keys-imagebox2 {
+	width: 100%;
+	transition: 1s ease;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+#ma-amy-winehouse {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.amy-winehouse-bottombox-left {
+	width: 30%;
+	height: 94%;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+}
+
+.amy-winehouse-bottombox {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+.amy-winehouse-bottombox-right {
+	width: 36%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+#ma-anderson-paak {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.anderson-paak-left {
+	width: 24%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.anderson-paak-bottombox {
+	width: 37%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.anderson-paak-right {
+	width: 27%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+#ma-anthony-hamilton {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.anthony-hamilton-bottombox-left {
+	width: 20%;
+	height: 94%;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+}
+
+.anthony-hamilton-bottombox-right {
+	width: 75%;
+	height: 94%;
+	margin: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+	overflow: scroll;
+}
+
+.anthony-hamilton-rightbox-container {
+	width: 100%;
+	height: 44.5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*background: #D04E51;*/
+	position: relative;
+}
+
+.anthony-hamilton-imagebox {
+	width: 100%;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+.anthony-hamilton-imagebox2 {
+	width: 80%;
+	margin: 10px;
+	float: right;
+	position: relative;
+}
+
+.anthony-hamilton-year {
+	width: 20%;
+	height: 50%;
+	margin: 10px;
+	margin-left: 50px;
+	/*background: white;*/
+	float: left;
+	position: relative;
+}
+
+.anthony-hamilton-year2 {
+	width: 25%;
+	margin: 10px;
+	/*background: white;*/
+	float: right;
+	position: relative;
+}
+
+#ma-aretha-franklin {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.aretha-franklin-bottombox1 {
+	width: 22%;
+	height: 94%;
+	margin: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+	position: relative;
+}
+
+.aretha-franklin-bottombox2 {
+	width: 23%;
+	height: 94%;
+	margin: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	position: relative;
+}
+
+.aretha-franklin-bottombox {
+	width: 40%;
+	height: 94%;
+	margin: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	position: relative;
+}
+
+#ma-bee-gees {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bee-gees-bottombox-left {
+	width: 28%;
+	height: 94%;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: left;
+}
+
+.bee-gees-infobox {
+	width: 100%;
+	height: 3%;
+	/*background: pink;*/
+	font-family: Courier;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.bee-gees-information {
+	width: 100%;
+	margin: 5px;
+	margin-left: 10px;
+	/*background: #7E9A34;*/
+	float: left;
+}
+
+.bee-gees-bottombox-middle {
+	width: 30%;
+	height: 94%;
+	margin: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+.bee-gees-bottombox-text {
+	width: 35%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: purple;*/
+	font-family: Courier;
+	float: right;
+	overflow-x: scroll;
+}
+
+.bee-gees-imagebox {
+	width: 95%;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+#ma-beyonce {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.beyonce-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.beyonce-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.beyonce-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-bilal {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bilal-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bilal-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bilal-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-bill-withers {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bill-withers-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bill-withers-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bill-withers-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-billie-eilish {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.billie-eilish-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.billie-eilish-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.billie-eilish-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-blackstreet {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.blackstreet-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.blackstreet-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.blackstreet-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-bobby-womack {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bobby-womack-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bobby-womack-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bobby-womack-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-bob-marley {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bob-marley-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bob-marley-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bob-marley-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-bootsys-rubber-band {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.bootsys-rubber-band-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	top: 5%;
+	padding: 10px;
+	/*background: #020E29;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.bootsys-rubber-band-text {
+	width: 67%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: #020E29;*/
+	float: right;
+	overflow: scroll;
+	position: relative;
+}
+
+#ma-boyz-ii-men {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.boyz-ii-men-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.boyz-ii-men-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.boyz-ii-men-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-cameo {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.cameo-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cameo-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cameo-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-cardi-b {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.cardi-b-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cardi-b-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cardi-b-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-carl-carlton {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.carl-carlton-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.carl-carlton-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.carl-carlton-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-celine-dion {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.celine-dion-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.celine-dion-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.celine-dion-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-chaka-khan {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.chaka-khan-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.chaka-khan-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.chaka-khan-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-che-fu {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.che-fu-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.che-fu-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.che-fu-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-cheryl-lynn {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.cheryl-lynn-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cheryl-lynn-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.cheryl-lynn-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-chic {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.chic-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.chic-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.chic-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-childish-gambino {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.childish-gambino-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.childish-gambino-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.childish-gambino-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-commondores {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.commondores-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.commondores-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.commondores-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-curtis-mayfield {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.curtis-mayfield-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.curtis-mayfield-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.curtis-mayfield-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-daryl-hall {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.daryl-hall-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.daryl-hall-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.daryl-hall-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-diana-ross {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.diana-ross-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.diana-ross-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.diana-ross-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-donna-summer {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.donna-summer-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.donna-summer-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.donna-summer-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-drake {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.drake-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.drake-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.drake-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-dr-dre {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.dr-dre-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.dr-dre-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.dr-dre-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-dr-hook {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.dr-hook-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.dr-hook-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.dr-hook-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-d-angelo {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.d-angelo-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.d-angelo-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.d-angelo-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-earl-young {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.earl-young-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.earl-young-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.earl-young-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-elton-john {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.elton-john-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.elton-john-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.elton-john-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-eric-benet {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.eric-benet-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.eric-benet-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.eric-benet-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-erykah-badu {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.erykah-badu-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.erykah-badu-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.erykah-badu-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ewf {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ewf-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ewf-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ewf-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-fat-freddys-drop {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.fat-freddys-drop-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fat-freddys-drop-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fat-freddys-drop-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-fleetwood-mac {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.fleetwood-mac-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fleetwood-mac-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fleetwood-mac-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-fugees {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.fugees-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fugees-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.fugees-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-george-benson {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.george-benson-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-benson-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-benson-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-george-clinton {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.george-clinton-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-clinton-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-clinton-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-george-michael {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.george-michael-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-michael-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.george-michael-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ginuwine {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ginuwine-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ginuwine-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ginuwine-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-gwen-stefani {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.gwen-stefani-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.gwen-stefani-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.gwen-stefani-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-herbs {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.herbs-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.herbs-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.herbs-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-india-arie {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.india-arie-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.india-arie-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.india-arie-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ice-cube {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ice-cube-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ice-cube-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ice-cube-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jackson-5 {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jackson-5-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jackson-5-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jackson-5-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jaguar-wright {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jaguar-wright-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jaguar-wright-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jaguar-wright-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-james-brown {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.james-brown-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.james-brown-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.james-brown-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jay-z {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jay-z-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jay-z-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jay-z-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jennifer-lopez {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jennifer-lopez-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jennifer-lopez-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jennifer-lopez-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jerry-wexler {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jerry-wexler-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jerry-wexler-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jerry-wexler-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jill-scott {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jill-scott-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jill-scott-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jill-scott-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-jimmy-jam {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.jimmy-jam-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jimmy-jam-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.jimmy-jam-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-john-oates {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.john-oates-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.john-oates-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.john-oates-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-johnny-gill {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.johnny-gill-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.johnny-gill-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.johnny-gill-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-justin-timberlake {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.justin-timberlake-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.justin-timberlake-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.justin-timberlake-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kanye-west {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kanye-west-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kanye-west-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kanye-west-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-katchafire {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.katchafire-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.katchafire-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.katchafire-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kendrick-lamar {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kendrick-lamar-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kendrick-lamar-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kendrick-lamar-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kc-jojo {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kc-jojo-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kc-jojo-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kc-jojo-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kc-the-sunshine-band {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kc-the-sunshine-band-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kc-the-sunshine-band-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kc-the-sunshine-band-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-keith-sweat {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.keith-sweat-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.keith-sweat-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.keith-sweat-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kool-and-the-gang {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kool-and-the-gang-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kool-and-the-gang-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kool-and-the-gang-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-kora {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.kora-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kora-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.kora-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-lauryn-hill {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.lauryn-hill-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lauryn-hill-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lauryn-hill-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-lenny-kravitz {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.lenny-kravitz-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lenny-kravitz-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lenny-kravitz-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-lionel-richie {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.lionel-richie-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lionel-richie-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lionel-richie-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-lizzo {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.lizzo-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lizzo-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.lizzo-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-luther-vandross {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.luther-vandross-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.luther-vandross-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.luther-vandross-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-mariah-carey {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.mariah-carey-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mariah-carey-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mariah-carey-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-mary-j-blige {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.mary-j-blige-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mary-j-blige-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mary-j-blige-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-marvin-gaye {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.marvin-gaye-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.marvin-gaye-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.marvin-gaye-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-maxwell {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.maxwell-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.maxwell-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.maxwell-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-michael-jackson {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.michael-jackson-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.michael-jackson-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.michael-jackson-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-missy-elliot {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.missy-elliot-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.missy-elliot-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.missy-elliot-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-motown {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.motown-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.motown-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.motown-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-mtume {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.mtume-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mtume-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.mtume-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-musiq-soulchild {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.musiq-soulchild-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.musiq-soulchild-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.musiq-soulchild-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-notorious-big {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.notorious-big-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.notorious-big-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.notorious-big-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ohio-players {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ohio-players-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ohio-players-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ohio-players-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-oliver-cheatham {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.oliver-cheatham-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.oliver-cheatham-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.oliver-cheatham-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-outkast {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.outkast-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.outkast-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.outkast-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-patrice-rushen {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.patrice-rushen-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.patrice-rushen-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.patrice-rushen-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-pee-wee-ellis {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.pee-wee-ellis-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.pee-wee-ellis-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.pee-wee-ellis-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-pharrell-williams {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.pharrell-williams-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.pharrell-williams-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.pharrell-williams-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-prince {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.prince-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.prince-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.prince-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-queen {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.queen-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.queen-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.queen-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-quincy-jones {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.quincy-jones-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.quincy-jones-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.quincy-jones-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ray-charles {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ray-charles-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ray-charles-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ray-charles-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-renee-geyer {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.renee-geyer-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.renee-geyer-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.renee-geyer-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-rick-james {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.rick-james-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.rick-james-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.rick-james-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-roger {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.roger-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.roger-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.roger-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ry-cooder {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ry-cooder-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ry-cooder-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ry-cooder-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-sade {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.sade-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sade-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sade-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-saturday-night-fever {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.saturday-night-fever-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.saturday-night-fever-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.saturday-night-fever-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-shalamar {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.shalamar-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-simply-red {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.simply-red-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.simply-red-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.simply-red-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-sister-sledge {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.sister-sledge-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sister-sledge-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sister-sledge-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-six60 {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.six60-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.six60-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.six60-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-smokey-robinson {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.smokey-robinson-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.smokey-robinson-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.smokey-robinson-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-snoop-dogg {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.snoop-dogg-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	background: #374E82;
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.snoop-dogg-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.snoop-dogg-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-soul-train {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.soul-train-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	background: black;
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.soul-train-box2 {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.soul-train-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.soul-train-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-stevie-wonder {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.stevie-wonder-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.stevie-wonder-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.stevie-wonder-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-supremes {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.supremes-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.supremes-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.supremes-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-sza {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.sza-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sza-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.sza-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-teena-marie {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.teena-marie-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.teena-marie-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.teena-marie-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-terence-trent-darby {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.terence-trent-darby-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.terence-trent-darby-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.terence-trent-darby-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-terry-lewis {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.terry-lewis-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.terry-lewis-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.terry-lewis-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-tevin-campbell {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.tevin-campbell-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tevin-campbell-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tevin-campbell-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-thank-god-its-friday {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.thank-god-its-friday-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.thank-god-its-friday-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.thank-god-its-friday-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-black-seeds {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-black-seeds-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-black-seeds-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-black-seeds-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-emotions {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-emotions-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-emotions-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-emotions-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-gap-band {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-gap-band-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-gap-band-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-gap-band-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-isly-brothers {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-isly-brothers-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-isly-brothers-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-isly-brothers-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-o-jays {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-o-jays-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-o-jays-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-o-jays-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-pharcyde {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-pharcyde-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-pharcyde-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-pharcyde-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-pointer-sisters {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-pointer-sisters-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-pointer-sisters-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-pointer-sisters-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-rolling-stones {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-rolling-stones-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-rolling-stones-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-rolling-stones-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-spinners {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-spinners-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-spinners-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-spinners-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-sugarhill-gang {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-sugarhill-gang-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-sugarhill-gang-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-sugarhill-gang-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-temptations {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-temptations-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-temptations-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-temptations-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-trammps {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-trammps-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-trammps-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-trammps-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-the-wiz {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.the-wiz-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-wiz-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.the-wiz-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-timbaland {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.timbaland-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.timbaland-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.timbaland-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-tina-turner {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.tina-turner-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tina-turner-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tina-turner-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-tlc {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.tlc-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tlc-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.tlc-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-toni-tony-tone {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.toni-tony-tone-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.toni-tony-tone-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.toni-tony-tone-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-ub40 {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.ub40-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ub40-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.ub40-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-whitney-huston {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.whitney-huston-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.whitney-huston-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.whitney-huston-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-wu-tang-clan {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.wu-tang-clan-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.wu-tang-clan-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.wu-tang-clan-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-zapp {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.zapp-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.zapp-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.zapp-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-2pac {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.shalamar-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#ma-50cent {
+	width: 98%;
+	height: 96%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+.shalamar-box {
+	width: 25%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
+}
+
+.shalamar-imagebox {
+	width: 100%;
+	float: left;
+	position: relative;
+}
