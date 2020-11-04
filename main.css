@@ -316,53 +316,30 @@ video {
 	display: none;
 }
 
-.alicia-keys-bottombox {
-	width: 37%;
+.alicia-keys-box {
+	width: 25%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
-	overflow: scroll;
-	position: relative;
-}
-
-.alicia-keys-bottombox-left {
-	width: 30%;
-	height: 91%;
-	margin: 10px;
-	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
+	/*background: yellow;*/
 	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.alicia-keys-albumbox {
-	width: 20%;
+.alicia-keys-box1 {
+	width: 41%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+	/*background: yellow;*/
+	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
 .alicia-keys-imagebox {
-	width: 45.5%;
-	margin: 10px;
-	float: left;
-	position: relative;
-}
-
-.alicia-keys-imagebox2 {
 	width: 100%;
-	transition: 1s ease;
-	margin: 10px;
 	float: left;
 	position: relative;
 }
@@ -378,38 +355,31 @@ video {
 	display: none;
 }
 
-.amy-winehouse-bottombox-left {
-	width: 30%;
-	height: 94%;
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: left;
-}
-
-.amy-winehouse-bottombox {
+.amy-winehouse-box {
 	width: 25%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+	/*background: yellow;*/
+	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.amy-winehouse-bottombox-right {
-	width: 36%;
+.amy-winehouse-box1 {
+	width: 41%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+	/*background: yellow;*/
+	float: left;
 	overflow: scroll;
+	position: relative;
+}
+
+.amy-winehouse-imagebox {
+	width: 100%;
+	float: left;
 	position: relative;
 }
 
@@ -424,39 +394,31 @@ video {
 	display: none;
 }
 
-.anderson-paak-left {
-	width: 24%;
+.anderson-paak-box {
+	width: 25%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
+	/*background: yellow;*/
 	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.anderson-paak-bottombox {
-	width: 37%;
+.anderson-paak-box1 {
+	width: 41%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
+	/*background: yellow;*/
 	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.anderson-paak-right {
-	width: 27%;
-	height: 91%;
-	margin: 10px;
-	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
-	overflow: scroll;
+.anderson-paak-imagebox {
+	width: 100%;
+	float: left;
 	position: relative;
 }
 
@@ -471,65 +433,31 @@ video {
 	display: none;
 }
 
-.anthony-hamilton-bottombox-left {
-	width: 20%;
-	height: 94%;
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: left;
-}
-
-.anthony-hamilton-bottombox-right {
-	width: 75%;
-	height: 94%;
+.anthony-hamilton-box {
+	width: 25%;
+	height: 91%;
 	margin: 10px;
-	/*background: purple;*/
-	font-family: Courier;
+	padding: 10px;
+	/*background: yellow;*/
 	float: left;
 	overflow: scroll;
+	position: relative;
 }
 
-.anthony-hamilton-rightbox-container {
-	width: 100%;
-	height: 44.5%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	/*background: #D04E51;*/
+.anthony-hamilton-box1 {
+	width: 41%;
+	height: 91%;
+	margin: 10px;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
 	position: relative;
 }
 
 .anthony-hamilton-imagebox {
 	width: 100%;
-	margin: 10px;
 	float: left;
-	position: relative;
-}
-
-.anthony-hamilton-imagebox2 {
-	width: 80%;
-	margin: 10px;
-	float: right;
-	position: relative;
-}
-
-.anthony-hamilton-year {
-	width: 20%;
-	height: 50%;
-	margin: 10px;
-	margin-left: 50px;
-	/*background: white;*/
-	float: left;
-	position: relative;
-}
-
-.anthony-hamilton-year2 {
-	width: 25%;
-	margin: 10px;
-	/*background: white;*/
-	float: right;
 	position: relative;
 }
 
