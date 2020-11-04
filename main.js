@@ -1,5 +1,4 @@
 // JavaScript Document
-//Make the ID element toggle visibility:
 function toggle_visibility(id) 
 {
        var e = document.getElementById(id);
@@ -8,8 +7,6 @@ function toggle_visibility(id)
        else
           e.style.display = 'block';
 }
-
-//Make the DIV element draggagle:
 
 var draggableElements = document.getElementsByClassName("draggable");
 
