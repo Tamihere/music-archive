@@ -472,33 +472,31 @@ video {
 	display: none;
 }
 
-.aretha-franklin-bottombox1 {
-	width: 22%;
-	height: 94%;
+.aretha-franklin-box {
+	width: 25%;
+	height: 91%;
 	margin: 10px;
-	/*background: purple;*/
-	font-family: Courier;
+	padding: 10px;
+	/*background: yellow;*/
 	float: left;
+	overflow: scroll;
 	position: relative;
 }
 
-.aretha-franklin-bottombox2 {
-	width: 23%;
-	height: 94%;
+.aretha-franklin-box1 {
+	width: 41%;
+	height: 91%;
 	margin: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
 	position: relative;
 }
 
-.aretha-franklin-bottombox {
-	width: 40%;
-	height: 94%;
-	margin: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+.aretha-franklin-imagebox {
+	width: 100%;
+	float: left;
 	position: relative;
 }
 
@@ -513,60 +511,30 @@ video {
 	display: none;
 }
 
-.bee-gees-bottombox-left {
-	width: 28%;
-	height: 94%;
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: left;
-}
-
-.bee-gees-infobox {
-	width: 100%;
-	height: 3%;
-	/*background: pink;*/
-	font-family: Courier;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-}
-
-.bee-gees-information {
-	width: 100%;
-	margin: 5px;
-	margin-left: 10px;
-	/*background: #7E9A34;*/
-	float: left;
-}
-
-.bee-gees-bottombox-middle {
-	width: 30%;
-	height: 94%;
+.bee-gees-box {
+	width: 25%;
+	height: 91%;
 	margin: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
+	padding: 10px;
+	/*background: yellow;*/
+	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.bee-gees-bottombox-text {
-	width: 35%;
+.bee-gees-box1 {
+	width: 41%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: purple;*/
-	font-family: Courier;
-	float: right;
-	overflow-x: scroll;
+	/*background: yellow;*/
+	float: left;
+	overflow: scroll;
+	position: relative;
 }
 
 .bee-gees-imagebox {
-	width: 95%;
-	margin: 10px;
+	width: 100%;
 	float: left;
 	position: relative;
 }
@@ -859,22 +827,27 @@ video {
 	width: 25%;
 	height: 91%;
 	margin: 10px;
-	top: 5%;
 	padding: 10px;
-	/*background: #020E29;*/
+	/*background: yellow;*/
 	float: left;
 	overflow: scroll;
 	position: relative;
 }
 
-.bootsys-rubber-band-text {
-	width: 67%;
+.bootsys-rubber-band-box1 {
+	width: 41%;
 	height: 91%;
 	margin: 10px;
 	padding: 10px;
-	/*background: #020E29;*/
-	float: right;
+	/*background: yellow;*/
+	float: left;
 	overflow: scroll;
+	position: relative;
+}
+
+.bootsys-rubber-band-imagebox {
+	width: 100%;
+	float: left;
 	position: relative;
 }
 
