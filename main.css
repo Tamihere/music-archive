@@ -110,6 +110,41 @@ video {
 	float: left;
 }
 
+.ma-me1 {
+	width: 33%;
+	margin: 5px;
+	margin-left: 10px;
+	background: white;
+	float: left;
+}
+
+.ma-title1 {
+	width: 33%;
+	margin: 5px;
+	background: white;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	float: left;
+}
+
+.ma-year1 {
+	width: 33%;
+	margin: 5px;
+	background: white;
+	text-align: right;
+	float: left;
+}
+
+.ma-search1 {
+	width: 33%;
+	margin: 5px;
+	background: white;
+	text-align: right;
+	float: left;
+}
+
 .ma-button {
 	width: 2%;
 	margin: 5px;
@@ -137,7 +172,7 @@ video {
 .ma-container {
 	width: 19.2%;
 	height: 96%;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-left: 6px;
 	margin-right: 5px;
 	/*background: salmon;*/
