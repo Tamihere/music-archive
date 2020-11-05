@@ -170,11 +170,11 @@ video {
 }
 
 .ma-container {
-	width: 19.2%;
+	width: 19%;
 	height: 96%;
-	margin-top: 30px;
-	margin-left: 6px;
-	margin-right: 5px;
+	margin-top: 2.5%;
+	margin-left: 0.8%;
+	margin-right: 0.2%;
 	/*background: salmon;*/
 	float: left;
 	position: relative;
