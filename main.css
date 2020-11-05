@@ -146,6 +146,31 @@ video {
 	float: left;
 }
 
+#ma-playlist {
+	width: 30%;
+	height: 70%;
+	background: white;
+	border: dashed 0.5pt;
+	top: 10%;
+	right: 3%;
+	font-family: Courier;
+	position: absolute;
+	display: none;
+}
+
+#playlist{
+	list-style: none;
+}
+
+#playlist li a{
+	color: black;
+	text-decoration: none;
+}
+        
+#playlist .current-song a{
+	color: blue;
+}
+
 .ma-button {
 	width: 2%;
 	margin: 5px;
