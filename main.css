@@ -130,10 +130,11 @@ video {
 }
 
 .ma-year1 {
-	width: 33%;
+	width: 1%;
 	margin: 5px;
-	background: white;
-	text-align: right;
+	font-size: 20pt;
+/*	background: white;*/
+	text-align: left;
 	float: left;
 }
 
