@@ -147,14 +147,15 @@ video {
 }
 
 #ma-playlist {
-	width: 30%;
+	width: 21%;
 	height: 70%;
 	background: white;
 	border: dashed 0.5pt;
 	top: 10%;
-	right: 3%;
+	right: 1.5%;
 	font-family: Courier;
 	position: absolute;
+	overflow-y: scroll;
 	display: none;
 }
 
@@ -168,7 +169,7 @@ video {
 }
         
 #playlist .current-song a{
-	color: blue;
+	color: gray;
 }
 
 .ma-button {
@@ -211,6 +212,15 @@ video {
 	height: 3%;
 	margin-left: 5px;
 	margin-right: 5px;
+	/*background: #4F9DED;*/
+	display: inline-block;
+}
+
+.ma-textbox-main1 {
+	width: 94%;
+	height: 3%;
+	margin-top: 2.5%;
+	margin-left: -10%;
 	/*background: #4F9DED;*/
 	display: inline-block;
 }
