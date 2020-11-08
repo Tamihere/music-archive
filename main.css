@@ -55,6 +55,11 @@ video {
 	width: 100%;
 }
 
+audio {
+	width: 100%;
+	opacity: 0.5;
+}
+
 .draggable {
 	position: relative;
 	cursor: move;
