@@ -14,6 +14,11 @@ body {
     background: transparent;
 }
 
+.main-page-marker {
+	text-decoration: underline;
+	text-decoration-color: #936D3A;
+}
+
 a {
 	color: black;
 	text-decoration: none;
@@ -21,6 +26,15 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+a1 {
+	color: black;
+	text-decoration: none;
+}
+
+a1:hover {
+	background: black;
 }
 /*Only used for line-througn text decoration to show that
 the subject is not yet finished*/
@@ -38,14 +52,14 @@ h {
 	display: flex;
 }
 
-.blackbox {
+/*.blackbox {
 	background: black;
 	display: inline-block;
 }
 
 .blackbox:hover {
 	background: transparent;
-}
+}*/
 
 img {
 	width: 100%;
@@ -267,6 +281,27 @@ audio {
 .ma-date {
 	text-align: right;
 	float: right;
+}
+
+.type-box {
+	width: 32%;
+	top: 5%;
+	margin: 0.5%;
+	float: left;
+	display: block;
+	position: relative;
+}
+
+#ma-type-box {
+	width: 99%;
+	height: 96%;
+	top: 5%;
+	margin-top: 6px;
+	margin-left: 4px;
+	background: white;
+	font-family: Courier;
+	overflow: scroll;
+	position: absolute;
 }
 
 #ma-aaliyah {
