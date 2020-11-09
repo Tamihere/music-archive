@@ -14,6 +14,11 @@ body {
     background: transparent;
 }
 
+::-moz-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 .main-page-marker {
 	text-decoration: underline;
 	text-decoration-color: #936D3A;
